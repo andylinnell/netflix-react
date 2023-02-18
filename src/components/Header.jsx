@@ -7,7 +7,7 @@ export default function Header () {
     return(
         <Container fluid>
             <Row id="topheader">
-                <Col><a href="http://localhost:3000/home" >TOONFLIX</a></Col>
+                <Col><a href="http://localhost:3000/home" ><h1>TOONFLIX</h1></a></Col>
             </Row>
         </Container>
     )

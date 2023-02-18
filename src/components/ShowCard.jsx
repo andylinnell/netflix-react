@@ -15,7 +15,13 @@ export default function ShowCard({ cartoon }) {
   return (
 
 
-    <Container fluid onClick={handleShow} className="card">
+    <Container fluid onClick={handleShow} className="showcard">
+
+<Row>
+                <Col xs={12} sm={6}>Col 1</Col>
+                <Col xs={12} sm={6}>Col 2</Col>
+                <Col>Col 3</Col>
+            </Row>
       <Row>
         <Col><h3>{cartoon.title}</h3></Col>
       </Row>
@@ -29,7 +35,6 @@ export default function ShowCard({ cartoon }) {
       <Row>
         <Col><p>{cartoon.genre}  {cartoon.year}</p></Col>
         <Col>
-          <p>{cartoon.genre}  {cartoon.year}</p>
           <p>{cartoon.rating}</p>
           <details>
             <summary>Info</summary>
@@ -40,9 +45,9 @@ export default function ShowCard({ cartoon }) {
         </Col>
       </Row>
 
-      <Row onClick={handleClose}>
+      <Row>
         <Col>
-          <Modal show={show} onHide={handleClose}>
+          <Modal  show={show} onHide={handleClose}>
             <Modal.Header>
               <Modal.Title>{cartoon.title}</Modal.Title>
             </Modal.Header>
