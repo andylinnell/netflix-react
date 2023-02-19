@@ -1,62 +1,62 @@
+  @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: inherit; }
 
 html {scroll-behavior: smooth;}
 
 .body { 
-  background-color: black;
-
-        
+  background-color: black; 
+  width: auto;   
 }
+
+
 
 /* Header
 ***************************** */
 #topheader {
   top: 0;
-  width: 100%;
-  height: 100px;
+  width: auto;
   position:sticky;
-  top: 0;
-  padding: 10px;
-  background: rgb(25,4,29);
+  padding: 3%;
   background: linear-gradient(0deg, rgba(25,4,29,1) 3%, rgba(27,157,196,1) 84%);
   z-index: 9999;
+  padding-top: 2%;
+  margin-bottom: 30px;
+  
+}
+
+a:link {
+  text-decoration: none;
 }
 
 
-h1 {
+div h1 {
   color: gainsboro;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-shadow: 8px 12px 8px  black;
+  font-family: 'Righteous', cursive;  text-shadow: 10px 12px 8px   black;
   text-align: center;
-  font-size: 3em;
-  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 4em;
+  
+  
 }
 
-h1 > a {
-  text-decoration:none;
-  color: gainsboro;
-}
+
 
 #section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: auto;
+  margin: 17px;
 
 }
 
 /* Nav
 ***************************** */
-nav{
-  text-align: right;
-  top: 0;
-  width: 100%;
-  height: 20px;
-  margin-bottom: 10px;
-}
 
-nav > button {
-  padding: 5px 15px;
-}
+
+
 
 div > section {
   display: flex;
@@ -67,10 +67,10 @@ div > section {
 /* Listing > Card
 ****************************** */
 .showcard {
-  flex: 1 0 250px;
+  flex: 1 0 300px;
   padding: 8px;
-  margin: 10px;
-  border: 4px solid grey;
+  margin:8px;
+  border: 8px groove rgba(108, 165, 239, 0.686);
   color: white;
   border-radius: 1%;
   transform: scale(1.0);
@@ -80,18 +80,20 @@ div > section {
   
 
   .showcard:hover {
-    transform: scale(1.1);
+    transform: scale(1.14);
     box-shadow: 1px 4px 70px -16px rgb(122, 215, 255);
     -webkit-box-shadow: 1px 10px 70px -16px rgb(156, 219, 246);
     -moz-box-shadow: 1px 4px 70px -16px rgb(155, 236, 249);
     background-color: rgb(22, 22, 22);
+    z-index: 999;
   }
 
 .showcard img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 70%;
+    margin-top: 10px;
 }
 
 .showcard h3 {
@@ -111,6 +113,17 @@ details {
 
 .modal {
   position: absolute;
-  height: 40%;
+  height: 60%;
   width: 50%;
+  width: 700px;
+}
+
+div.modal-body {
+ background-color: azure;
+
+}
+.my-modal {
+  width: 800px;
+  max-width: 90vw;
+  min-width: 50%;
 }
