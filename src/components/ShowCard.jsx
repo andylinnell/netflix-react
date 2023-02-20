@@ -47,14 +47,14 @@ export default function ShowCard({ cartoon }) {
         <Row>
           <Col>
             <Modal show={show} onHide={handleClose} size="lg" centered>
-              <Modal.Header>
+              <Modal.Header className="mheader">
                 <Modal.Title>{cartoon.title}</Modal.Title>
               </Modal.Header>
 
               <Modal.Body>
-                <iframe width="760" height="415" src={cartoon.video} title={cartoon.title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>                            </Modal.Body>
+                <iframe width="100%" height="415" src={cartoon.video} title={cartoon.title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>                            </Modal.Body>
 
-              <Modal.Footer>
+              <Modal.Footer className="mfooter">
                 <Button variant='secondary'
                   onClick={handleClose}>Close</Button>
               </Modal.Footer>
