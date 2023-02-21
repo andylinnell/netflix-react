@@ -37,7 +37,7 @@ export default function ShowCard({ cartoon }) {
         </div>
         <Row>
           <details>
-            <summary>Info</summary>
+            <summary className="summary"> More Info</summary>
             <p>Minutes: {cartoon.runtime_in_minutes}</p>
             <p>Episodes: {cartoon.episodes}</p>
             <p>Creator: {cartoon.creator}</p>
@@ -59,8 +59,6 @@ export default function ShowCard({ cartoon }) {
                   onClick={handleClose}>Close</Button>
               </Modal.Footer>
             </Modal>
-
-
           </Col>
         </Row>
       </Container>
